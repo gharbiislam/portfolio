@@ -10,7 +10,7 @@ const Services = () => {
 
     return (
         <div className='container mx-auto px-4 sm:px-8  h-screen flex flex-col justify-center ' id='services'>
-            <h2 className='text-4xl font-bold text-teal-900 mb-12'>My Services</h2>
+            <h2 className=''>My Services</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                 {/* UI/UX Design Card */}
