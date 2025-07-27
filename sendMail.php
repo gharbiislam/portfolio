@@ -28,15 +28,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'gharbiislem14@gmail.com'; 
-        $mail->Password   = 'fhyl mktu ptbk smwt';     
+        $mail->Username   = 'portfolio@gmail.com'; //put ur email here
+        $mail->Password   = '123 456 789 112';    //put ur psw here 
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
         // Recipients
-        $mail->setFrom('gharbiislem14@gmail.com', $name); 
+        $mail->setFrom('portfolio@gmail.com', $name);  //put ur email here
         $mail->addReplyTo($email, $name); 
-        $mail->addAddress('gharbiislem14@gmail.com'); 
+        $mail->addAddress('portfolio@gmail.com');  //put ur email here
 
         // Content
         $mail->isHTML(true);
