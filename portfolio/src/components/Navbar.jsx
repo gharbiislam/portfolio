@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
 
-    <div className='  fixed w-full h-[80px]   bg-teal-800 text-[#E3F8F4] flex justify-center items-center '>
+<div className='fixed w-full h-[80px] bg-teal-800 text-[#E3F8F4] flex justify-center items-center z-50 shadow-md'>
       {/* Logo */}
       <div className='container  px-4 sm:px-8 flex justify-between items-center '>
       <div>
@@ -30,11 +30,9 @@ const Navbar = () => {
       </ul>
       <div onClick={toggleDarkMode} className='cursor-pointer ml-6 '>
           {darkMode ? <HiOutlineSun size={26} /> : <HiOutlineMoon size={26} />}
-        </div></div>
-     
-
-      {/* Hamburger */}
-      <div onClick={toggleNav} className='md:hidden z-10 cursor-pointer'>
+        </div>
+            {/* Hamburger */}
+      <div onClick={toggleNav} className='md:hidden z-10 cursor-pointer ml-6'>
         {nav ? <FaTimes size={26}/> : <FaBars size={26} />}
       </div>
 
@@ -47,6 +45,10 @@ const Navbar = () => {
         
       </ul>
 
+        </div>
+     
+
+  
       
 
       {/* Social Icons */}

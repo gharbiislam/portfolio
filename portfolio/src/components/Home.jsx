@@ -22,10 +22,13 @@ const Home = () => {
         detail, I turn ideas into intuitive digital experiences.
       </p>
       
+    
+       <a href="/CV.IslemGharbi.pdf" download>
       <button className='group flex items-center text-teal-800 border-2 border-teal-800 rounded-lg font-bold px-6 py-3 w-fit hover:bg-teal-800 hover:text-white transition-all duration-300'>
-        View Projects
-        <HiArrowNarrowRight className='ml-3 group-hover:translate-x-1 transition-transform duration-300' />
+        Download My Resume         <HiArrowNarrowRight className='ml-3 group-hover:translate-x-1 transition-transform duration-300' />
+
       </button>
+    </a>  
     </div>
   )
 }

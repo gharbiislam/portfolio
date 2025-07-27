@@ -31,8 +31,8 @@ export const Contact = () => {
   };
 
   return (
-    
-      <div className='container mx-auto px-4 sm:px-8  h-screen flex flex-col justify-center' id='contact'>
+        <div className=' mx-auto   flex flex-col justify-center'>
+        <div className='container mx-auto px-4 sm:px-8  flex flex-col justify-center' id='contact'>
         <h2 className="">Get in Touch</h2>
 
         <div className="grid md:grid-cols-12 gap-8">
@@ -85,7 +85,12 @@ export const Contact = () => {
 
             {status && <p className="mt-4 text-sm text-teal-800">{status}</p>}
           </div>
-        </div>
+        </div></div>
+        <footer className='mt-24'>
+          <hr className="border-t border-teal-800 opacity-55 " />
+          <p className="text-sm text-gray-400 text-center my-4">&copy; {new Date().getFullYear()} Islem Gharbi. All rights reserved.</p>
+
+        </footer>
       </div>
     
   );

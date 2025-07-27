@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Works from "../components/Works";
-
+import { HiArrowNarrowRight } from 'react-icons/hi';
 export const Projects = () => {
   const [items, setItems] = useState(Works);
   
@@ -14,13 +14,10 @@ export const Projects = () => {
 
   return (
     <div>
-      {/* Invisible scroll anchor positioned above the content */}
-      <div id="projects" className="absolute -mt-20"></div>
       
-      <div className="container mx-auto px-4 sm:px-8 py-16 min-h-screen pt-20">
+      <div className="container mx-auto px-4 sm:px-8 py-16 min-h-screen pt-20" id='projects'>
         <h2 className="mb-8">My Projects</h2>
-        
-        {/* Filter Buttons */}
+       {/* Filter Buttons */}
         <div className="flex flex-wrap gap-4 mb-4">
           <span 
             className="px-4 py-2 rounded-full border border-teal-700 text-teal-800 font-medium hover:bg-teal-700 hover:text-white transition cursor-pointer"
@@ -53,29 +50,23 @@ export const Projects = () => {
           {items.map(({ id, image, title, category, links }) => (
             <div
               key={id}
-              className="relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
-            >
+              className="relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300" >
               <img src={image} alt={title} className="w-full h-64 object-cover" />
               
-              {/* Overlay Content */}
-              <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 
-                {/* Categories */}
                 <div className="flex flex-wrap gap-2 mb-2">
                   {category.map((cat, index) => (
                     <span 
                       key={index}
-                      className="text-xs text-teal-300 uppercase bg-teal-900 bg-opacity-50 px-2 py-1 rounded"
-                    >
+                      className="text-xs text-teal-300 uppercase bg-teal-900 bg-opacity-50 px-2 py-1 rounded">
                       {cat}
                     </span>
                   ))}
                 </div>
-                
-                {/* Title */}
+    
                 <h3 className="text-xl text-white font-semibold mb-3">{title}</h3>
-                
-                {/* Links */}
+
                 <div className="flex flex-wrap gap-2">
                   {links.map((link, index) => (
                     <a
@@ -83,9 +74,9 @@ export const Projects = () => {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-teal-400 hover:text-white hover:underline bg-teal-800 bg-opacity-70 px-3 py-1 rounded transition"
+                      className="text-sm flex items-center text-teal-400 space-x-2 hover:text-white hover:underline bg-teal-800 bg-opacity-70 px-3 py-1 rounded transition"
                     >
-                      {link.label} →
+                      {link.label} <HiArrowNarrowRight/>
                     </a>
                   ))}
                 </div>
