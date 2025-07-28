@@ -3,6 +3,8 @@ import Work2 from '../assets/safepulse.png'
 import Work4 from "../assets/bzurelamal.png"
 import Work3 from "../assets/rayensport.png"
 import Work5 from '../assets/elmdina.png'
+import Work6 from '../assets/whoosh.png'
+import Work7 from '../assets/lindex.png'
 
 const Works = [
     {
@@ -53,7 +55,25 @@ const Works = [
             { label: "GitHub", url: "https://github.com/gharbiislam/Restaurant-" },
             { label: "Live Demo", url: "https://gharbiislam.github.io/Restaurant-/" } 
         ]
-    }
+    },
+    {
+        id: 6,
+        image: Work6,
+        title: "Whoosh",
+        category: ["branding"],
+        links: [
+            { label: "Behance", url: "https://www.behance.net/gallery/187936935/Whoosh-Branding?tracking_source=project_owner_other_projects" },
+        ]
+    },
+    {
+        id: 7,
+        image: Work7,
+        title: "Lindex",
+        category: ["branding"],
+        links: [
+            { label: "Behance", url: "https://www.behance.net/gallery/187947757/Banners" },
+        ]
+    },
 ]
 
 export default Works

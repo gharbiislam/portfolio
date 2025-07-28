@@ -13,7 +13,7 @@ export const Projects = () => {
   }
 
   return (
-    <div>
+        <div className='dark:bg-slate-900  '>
       
       <div className="container mx-auto px-4 sm:px-8 py-16 min-h-screen pt-20" id='projects'>
         <h2 className="mb-8">My Projects</h2>

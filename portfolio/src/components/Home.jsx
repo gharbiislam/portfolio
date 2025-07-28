@@ -3,9 +3,12 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 
 const Home = () => {
   return (
-    <div className='container mx-auto px-4 sm:px-8  h-screen flex flex-col justify-center' id='home'>
+            <div className='dark:bg-slate-900  '>
+
+   <div className='container mx-auto px-4 sm:px-8  h-screen flex flex-col justify-center ' id='home'>
+
       
-      <p className=''>Hello, my name is</p>
+      <p className='dark:text-white'>Hello, my name is</p>
       
       <h1 className='text-teal-800 text-4xl sm:text-7xl font-bold'>
         Islem Gharbi
@@ -15,7 +18,7 @@ const Home = () => {
         I'm a UI/UX designer and front-end developer
       </h2>
       
-      <p className=' py-4 '>
+      <p className=' py-4 dark:text-white '>
         I'm a creative front-end developer and UI/UX designer from Tunisia.
         I craft clean, responsive websites and user-friendly interfaces using 
         HTML, CSS, JavaScript, and design tools. Passionate about design and 
@@ -29,7 +32,7 @@ const Home = () => {
 
       </button>
     </a>  
-    </div>
+    </div></div>
   )
 }
 

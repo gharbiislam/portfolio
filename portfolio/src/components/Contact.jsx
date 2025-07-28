@@ -31,13 +31,13 @@ export const Contact = () => {
   };
 
   return (
-        <div className=' mx-auto   flex flex-col justify-center'>
+        <div className=' mx-auto   flex flex-col justify-center dark:bg-slate-900 '>
         <div className='container mx-auto px-4 sm:px-8  flex flex-col justify-center' id='contact'>
         <h2 className="">Get in Touch</h2>
 
         <div className="grid md:grid-cols-12 gap-8">
           <div className="md:col-span-5">
-            <p className="mb-6">
+            <p className="mb-6 dark:text-white">
               Whether you have a project idea, a question, or just want to say hello — I’d love to hear from you.
             </p>
           </div>

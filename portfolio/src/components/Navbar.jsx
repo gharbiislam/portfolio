@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import { FaBars, FaTimes, FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import { HiOutlineMail, HiOutlineSun, HiOutlineMoon } from 'react-icons/hi';
 import Logo from '../assets/logo.png';
 
-const Navbar = () => {
+const Navbar = ({isDarkMode, setIsDarkMode}) => {
   const [nav, setNav] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   const toggleNav = () => setNav(!nav);
-  const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
 
@@ -28,8 +26,9 @@ const Navbar = () => {
          {/* Dark mode button */}
         
       </ul>
-      <div onClick={toggleDarkMode} className='cursor-pointer ml-6 '>
-          {darkMode ? <HiOutlineSun size={26} /> : <HiOutlineMoon size={26} />}
+      <div onClick={()=> setIsDarkMode(prev =>!prev)} className='cursor-pointer ml-6 '>
+               {isDarkMode ? <HiOutlineSun size={26} /> : <HiOutlineMoon size={26} />}
+ 
         </div>
             {/* Hamburger */}
       <div onClick={toggleNav} className='md:hidden z-10 cursor-pointer ml-6'>
