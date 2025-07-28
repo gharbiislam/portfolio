@@ -22,4 +22,7 @@
         @apply font-bold;
         @apply mb-4
     }
+    html {
+  scroll-behavior: smooth;
+}
     }

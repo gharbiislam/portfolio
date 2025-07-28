@@ -13,9 +13,9 @@ export const Projects = () => {
   }
 
   return (
-        <div className='dark:bg-slate-900  '>
+        <div className='dark:bg-slate-900 scroll-mt-24 py-10'id='projects'>
       
-      <div className="container mx-auto px-4 sm:px-8 py-16 min-h-screen pt-20" id='projects'>
+      <div className="container mx-auto px-4 sm:px-8 py-16 min-h-screen pt-20" >
         <h2 className="mb-8">My Projects</h2>
        {/* Filter Buttons */}
         <div className="flex flex-wrap gap-4 mb-4">

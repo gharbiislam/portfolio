@@ -9,8 +9,8 @@ const Services = () => {
     };
 
     return (
-        <div className='dark:bg-slate-900  '>
-        <div className='container mx-auto px-4 sm:px-8  h-screen flex flex-col justify-center ' id='services'>
+    <div className="dark:bg-slate-900 scroll-mt-24 py-20" id="services">
+  <div className="container mx-auto px-4 sm:px-8 flex flex-col justify-center  gap-12">
             <h2 className=''>My Services</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
