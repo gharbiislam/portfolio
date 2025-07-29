@@ -1,0 +1,70 @@
+# ✅ Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ✅ Build output
+dist/
+build/
+
+# ✅ System files
+.DS_Store
+Thumbs.db
+
+# ✅ Editor-specific
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ✅ Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# ✅ Logs
+logs
+*.log
+*.log.*
+
+# ✅ Coverage reports
+coverage/
+*.lcov
+
+# ✅ OS-specific
+# macOS
+*.DS_Store
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# ✅ Git
+.git/
+
+# ✅ GitHub Codespaces / VS Online
+.vscode-remote/
+
+# ✅ React testing snapshots
+*.snap
+
+# ✅ TypeScript build
+*.tsbuildinfo
+
+# ✅ Optional: Ignore large or sensitive assets
+*.mp4
+*.psd
+*.zip
+*.exe
+*.pdf
+*.mov
+*.avi
+
+# ✅ Optional: Local PHP files not meant for repo (since you're using XAMPP)
+*.bak
+*.tmp
+*.db
+*.sqlite
+*.sql
