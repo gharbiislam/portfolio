@@ -14,7 +14,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       {/* Logo */}
       <div className='container  px-4 sm:px-8 flex justify-between items-center '>
       <div>
-        <img src={Logo} alt="logo" className='w-[50px]' />
+        <img src={Logo} alt="logo" className='w-[45px]' />
       </div>
 
       {/* Desktop Nav */} <div className='flex items-center'>
